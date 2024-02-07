@@ -9,4 +9,4 @@ keys:
 env: 
   secret: "C@S1GN#$&"
 script:
-  - cosign sign --key cosign.key Art
+  - cosign sign --key cosign.key arthanaharidas/python-hello-world:latest
