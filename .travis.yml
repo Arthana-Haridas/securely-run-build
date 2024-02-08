@@ -2,11 +2,13 @@ os: linux
 jobs:
   include:
     - stage: "sleep 109"
+env: 
+  secret: "C@S1GN#$&"    
 before_script:
   - travis_key Art cosign.key
 keys:
   - Art 
-env: 
-  secret: "C@S1GN#$&"
+#env: 
+ # secret: "C@S1GN#$&"
 script:
   - cosign sign --key cosign.key arthanaharidas/python-hello-world:latest
