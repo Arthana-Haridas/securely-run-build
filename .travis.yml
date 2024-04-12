@@ -5,9 +5,9 @@ jobs:
 env: 
   secret: "C@S1GN#$&"    
 before_script:
-  - travis_key Art cosign.key
+  - travis_key Key cosign.key
 keys:
-  - Art 
+  - Key
 #env: 
  # secret: "C@S1GN#$&"
 script:
